@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("--------------[ Game Guide ]")]
+    [SerializeField] GuideMenu gameGuideMenu;
+
     [Header("--------------[ Core ]")]
     public bool isOver;
     public int score;
@@ -99,6 +102,7 @@ public class GameManager : MonoBehaviour
             lastDongle.Drag();
         }
     }
+    public void OpenGameGuide() => gameGuideMenu.gameObject.SetActive(true);
 
     Dongle MakeDongle()
     {

@@ -162,14 +162,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721ff13662ec09948817716dc7a56851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentAxisValue: 0
   manager: {fileID: 0}
   effect: {fileID: 0}
   level: 0
   isDrag: 0
   isMerge: 0
   isAttach: 0
-  moveSpeed: 12
+  moveSpeed: 50
   dropCooldown: 1
+  moveSmoothness: 0.2
+  boostMultiplier: 1.3
+  boostThreshold: 0.3
+  boostSmoothness: 0.05
   rigid: {fileID: 0}
 --- !u!95 &7911448975608456696
 Animator:

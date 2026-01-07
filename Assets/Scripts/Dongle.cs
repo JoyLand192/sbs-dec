@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class Dongle : MonoBehaviour
 {
+    [SerializeField] float currentAxisValue;
     public GameManager manager;
     public ParticleSystem effect;
 
@@ -122,6 +124,7 @@ public class Dongle : MonoBehaviour
                     Drop();
                 }
             }
+            currentAxisValue = h * currentSpeed;
         }
     }
 
